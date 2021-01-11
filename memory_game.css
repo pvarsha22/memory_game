@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-family: arial;
+  position: relative;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  color:black;
+  letter-spacing: 10px;
+  font-size: 22px;
+  padding: 10px 5px;
+}
+
+
+/* main SECTION */
+.main {
+  background: white;
+  width: 410px;
+  height: 375px;
+  margin: auto;
+}
+
+
+.box {
+  background: #b7c0ca;
+  background-size: 250%;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+
+.play:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* STATUS bar */
+.state {
+  background: gray;
+  background-size: 250%;
+  width: 390px;
+  line-height: 35px;
+  float: left;
+  margin: 10px 0 0 10px;
+  padding: 0 10px;
+  color: white;
+  font-size: 16px;
+}
+
+
+.time {
+  float: left;
+}
+
+.time::after {
+  content: "   secs";
+}
+
+.score {
+  float: right;
+}
+
+.score::after {
+  content: "   points";
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+.outlined {
+  outline: solid 3px #171b1f;
+  background: #c2bfc4;
+}
+
+/* PRE modal window */
+#pre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#themes {
+  margin: auto;
+  padding: 20px;
+  width: 250px;
+  background: white;
+  color: #8499ad;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#themes p {
+  margin-top: 10px;
+  padding: 5px 20px;
+  border: solid 1px;
+  background: white;
+  color: #7e8892;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#themes p:hover {
+  background: #bfd2e6;
+  background-size: 250%;
+  color: white;
+}
+
+/* POST modal window */
+#post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+#post > div {
+  width: 300px;
+  padding: 20px 0 40px;
+  background: rgb(63, 60, 60);
+  color: #d0e3f7;
+}
+
+#post p:first-child, 
+#post #final {
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+#post #again {
+  color: #7991aa;
+  text-decoration: none;
+  margin: auto;
+  padding: 10px 20px;
+  width: 160px;
+  border: solid 1px;
+}
+
+#post #again:hover {
+  background: #b2bec9;
+  background-size: 250%;
+  color: white;
+  cursor: pointer;
+}
