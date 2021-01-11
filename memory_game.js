@@ -159,7 +159,7 @@ var library = {
 
           // same images
             else {
-              score += 10;
+              score += 5;
               win += 2; // number of cards selected same
               tempElt1.firstChild.classList.add("outlined");
               tempElt2.firstChild.classList.add("outlined");
